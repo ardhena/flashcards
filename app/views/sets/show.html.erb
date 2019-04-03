@@ -1,0 +1,23 @@
+<h1>
+  <%= @set.name %>
+  <small><%= @set.absolute_path %></small>
+</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th><%= @set.languages[0] %></th>
+      <th><%= @set.languages[1] %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @set.words.each.with_index do |word, i| %>
+      <tr>
+        <td><%= i + 1 %></td>
+        <td><%= word[@set.languages[0]] %></td>
+        <td><%= word[@set.languages[1]] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

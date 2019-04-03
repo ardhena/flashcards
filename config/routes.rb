@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   resources :repositories, only: [:show, :index]
-  resources :sets
+  resources :sets, only: [:show]
 end
