@@ -7,6 +7,9 @@ gem 'rails', '~> 6.0.0.beta3'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'jbuilder', '~> 2.5'
+gem 'trailblazer'
+gem 'trailblazer-rails'
+gem 'reform-rails'
 
 group :development, :test do
   gem 'pry'
