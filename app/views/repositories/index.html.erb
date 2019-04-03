@@ -1,0 +1,11 @@
+<h1>Repositories</h1>
+
+<div>
+  <% if @repository.relative_path.present? %>
+    <%= link_to "..", repository_path(@repository.relative_path) %>
+  <% else %>
+    <%= link_to "..", repositories_path %>
+  <% end %>
+
+  <%= render "node", node: @repository %>
+</div>
