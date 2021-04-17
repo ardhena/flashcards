@@ -24,11 +24,12 @@
 
   .set-index-box-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     width: 200px;
-    height: 50px;
+    height: 70px;
     border: 1px solid $green;
     border-radius: 10px;
     background-color: $yellow;

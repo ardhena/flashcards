@@ -1,11 +1,15 @@
 <h1>Flashcard sets</h1>
 
-<h3 class="align-right"><%= link_to "+ Add flashcard set", new_set_path %></h3>
+<h3 class="align-right"><%= link_to "✏️ Add flashcard set", new_set_path %></h3>
 
 <div class="set-index-box">
   <% @sets.each do |set| %>
-    <%= link_to set_path(set.name), class: "set-index-box-item" do %>
-      <%= set.name %>
-    <% end %>
+    <div class="set-index-box-item">
+      <span><%= link_to set.name, set_path(set.name) %></span>
+      <span>
+        <%= link_to "✏️", edit_set_path(set.name) %>
+        <%= link_to "🗑️", delete_set_path(set.name), method: :delete, data: {confirm: "Are you sure?"} %>
+      </span>
+    </div>
   <% end %>
 </div>

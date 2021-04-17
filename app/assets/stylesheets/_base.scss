@@ -9,7 +9,6 @@ body {
   font-size: $font-size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  textarea {font-family: $font-family;}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,6 +30,8 @@ input, textarea {
   border: 1px solid $pink;
   border-radius: 10px;
   background-color: $white;
+  font-size: $font-size;
+  font-family: $font-family;
 }
 
 button {
@@ -39,6 +40,7 @@ button {
   border-radius: 10px;
   background-color: $yellow;
   cursor: pointer;
+  font-size: $font-size;
 
   &:hover {
     background-color: $green;
@@ -62,7 +64,7 @@ table {
 
 .content {
   margin: 50px 100px;
-  min-height: 50vh;
+  min-height: 75vh;
 
   h1 {
     margin: 20px 0;

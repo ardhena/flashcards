@@ -1,4 +1,7 @@
-<h1><%= @set.name %></h1>
+<h1><%= @set.name %> flashcard set</h1>
+
+<h3 class="align-right"><%= link_to "✏️ Edit flashcard set", edit_set_path(@set.name) %></h3>
+<h3 class="align-right"><%= link_to "🗑️ Delete flashcard set", delete_set_path(@set.name), method: :delete, data: {confirm: "Are you sure?"} %></h3>
 
 <table>
   <tr>
