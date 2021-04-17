@@ -1,0 +1,99 @@
+@import 'variables';
+
+body {
+  color: $black;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  textarea {font-family: $font-family;}
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $pink;
+}
+
+a {
+  color: $pink;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+input, textarea {
+  padding: 5px;
+  border: 1px solid $pink;
+  border-radius: 10px;
+  background-color: $white;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid $pink;
+  border-radius: 10px;
+  background-color: $yellow;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+table {
+  width: 100%;
+
+  td {
+    padding: 10px;
+    border-bottom: 1px solid $green;
+  }
+
+  th {
+    padding: 10px;
+    border-bottom: 1px solid $green;
+    background-color: $yellow;
+  }
+}
+
+.content {
+  margin: 50px 100px;
+  min-height: 50vh;
+
+  h1 {
+    margin: 20px 0;
+    border-bottom: 2px solid $green;
+    padding: 10px 20px;
+  }
+}
+
+// columns
+.column-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .column-10 {
+    width: calc(10% - 20px);
+    padding: 0 10px;
+  }
+
+  .column-50 {
+    width: calc(50% - 20px);
+    padding: 0 10px;
+  }
+}
+
+.column-centered {
+  display: flex;
+  justify-content: center;
+}
+
+// alignment
+.align-right {
+  text-align: right;
+}

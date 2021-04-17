@@ -1,0 +1,30 @@
+@import 'variables';
+
+.navbar {
+  border-bottom: 1px $pink solid;
+  background-color: $yellow;
+  padding: 0;
+  display: inline-flex;
+  width: 100vw;
+
+  .title {
+    font-weight: 600;
+    padding: 20px 20px;
+    color: $pink;
+    cursor: pointer;
+
+    a {
+      color: $pink;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 10px 0;
+  margin: auto;
+  color: $pink;
+}

@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'base';
+@import 'navigation_and_footer';
+@import 'variables';
+
+.set-index-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  .set-index-box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid $green;
+    border-radius: 10px;
+    background-color: $yellow;
+    margin: 20px;
+  }
+}

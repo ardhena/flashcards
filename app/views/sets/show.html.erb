@@ -1,0 +1,15 @@
+<h1><%= @set.name %></h1>
+
+<table>
+  <tr>
+    <th><%= @set.headers.first %></th>
+    <th><%= @set.headers.last %></th>
+  </tr>
+
+  <% @set.content.each do |line| %>
+    <tr>
+      <td><%= line.first %></td>
+      <td><%= line.last %></td>
+    </tr>
+  <% end %>
+</table>

@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar">
+      <div class="title"><%= link_to 'Flashcards', sets_path %></div>
+    </div>
+    <div class="content">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      <span>Flashcards</span>
+    </div>
   </body>
 </html>

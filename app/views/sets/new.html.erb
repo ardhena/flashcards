@@ -1,0 +1,16 @@
+<h1>New flashcard set</h1>
+
+<div class="column-section column-centered">
+  <div class="column-10">
+    <p><b>Name</b></p>
+    <p><b>Content</b></p>
+  </div>
+
+  <div class="column-50">
+    <%= form_with url: create_set_path do |form| %>
+      <p><%= form.text_field :name %></p>
+      <p><%= form.text_area :content, style: "width: 100%; height: 500px" %></p>
+      <%= form.button 'Submit' %>
+    <% end %>
+  </div>
+</div>
